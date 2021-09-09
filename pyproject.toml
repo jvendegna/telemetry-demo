@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "telemetry-demo"
+version = "0.1.0"
+description = ""
+authors = ["Jakob Vendegna <me@jakobvendegna.dev>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+opentelemetry-api = "^1.5.0"
+opentelemetry-sdk = "^1.5.0"
+opentelemetry-exporter-jaeger = "^1.5.0"
+opentelemetry-instrumentation-flask = "^0.24b0"
+opentelemetry-instrumentation-requests = "^0.24b0"
+Flask = "^2.0.1"
+requests = "^2.26.0"
+opentelemetry-propagator-b3 = "^1.5.0"
+opentelemetry-exporter-otlp = "^1.5.0"
+black = "^21.8b0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
